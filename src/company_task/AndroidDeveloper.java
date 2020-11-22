@@ -12,20 +12,22 @@ package company_task;
 public class AndroidDeveloper implements Employee{
     
   private String name;
-  private String job= "AndroidDeveloper";
-   double numOfHoursWorked;
- private  int hourPrice=50;
-   private   int hourabsencePrice=60;
-  private double numofHourAbsenceAllow=10;
+  private String job;
+  private double numOfHoursWorked;
   private double numhOfHourAbsence;
-   
+    double hourPrice;
+    double  hourabsencePrice;
+  double numofHourAbsenceAllow;
     
     
-     public AndroidDeveloper(String name, String job, double numOfHoursWorked, double numhOfHourAbsence) {
+     public AndroidDeveloper(String name, String job, double numOfHoursWorked, double numhOfHourAbsence,double hourPrice, double   hourabsencePrice,double numofHourAbsenceAllow) {
         this.name = name;
         this.job = job;
         this.numOfHoursWorked = numOfHoursWorked;
         this.numhOfHourAbsence = numhOfHourAbsence;
+       this.hourPrice=hourPrice;
+       this.hourabsencePrice=hourabsencePrice;  
+       this.numofHourAbsenceAllow=numofHourAbsenceAllow;
          if(numhOfHourAbsence<0){System.out.println("Please check num of hours which you entered (it must be positive num)");
  }
         else {getSalary(numOfHoursWorked, numhOfHourAbsence);
@@ -33,36 +35,36 @@ public class AndroidDeveloper implements Employee{
          }
     }
 
-    public double getNumOfHoursWorked() {
-        return numOfHoursWorked;
-    }
-
-    public void setNumOfHoursWorked(double numOfHoursWorked) {
-        this.numOfHoursWorked = numOfHoursWorked;
-    }
-
-    public double getNumhOfHourAbsence() {
-        return numhOfHourAbsence;
-    }
-
-    public void setNumhOfHourAbsence(double numhOfHourAbsence) {
-        this.numhOfHourAbsence = numhOfHourAbsence;
-    }
-      public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getJob() {
-        return job;
-    }
-
-    public void setJob(String job) {
-        this.job = job;
-    }
+//    public double getNumOfHoursWorked() {
+//        return numOfHoursWorked;
+//    }
+//
+//    public void setNumOfHoursWorked(double numOfHoursWorked) {
+//        this.numOfHoursWorked = numOfHoursWorked;
+//    }
+//
+//    public double getNumhOfHourAbsence() {
+//        return numhOfHourAbsence;
+//    }
+//
+//    public void setNumhOfHourAbsence(double numhOfHourAbsence) {
+//        this.numhOfHourAbsence = numhOfHourAbsence;
+//    }
+//      public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public String getJob() {
+//        return job;
+//    }
+//
+//    public void setJob(String job) {
+//        this.job = job;
+//    }
 
     
     @Override

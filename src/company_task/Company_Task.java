@@ -30,10 +30,10 @@ public class Company_Task {
                  System.out.println("Please Enter your num of hours absence :");
                  double numAbscence=sc.nextDouble();
                  if(job==1){
-      AndroidDeveloper a=new AndroidDeveloper(name, "Android developer", numWorked, numAbscence);
+      AndroidDeveloper a=new AndroidDeveloper(name,Employee.jobAnd, numWorked, numAbscence,Employee.hourPriceAnd,Employee.hourabsencePriceAnd,Employee.numofHourAbsenceAllowAnd);
  }
                  else if (job==2){
-                     FlutterDeveloper b =new FlutterDeveloper(name, "Flutter developer", numWorked, numAbscence);
+                     FlutterDeveloper b =new FlutterDeveloper(name, Employee.jobFlu, numWorked, numAbscence,Employee.hourPriceFlu,Employee.hourabsencePriceFlu,Employee.numofHourAbsenceAllowFlu);
                  }
                  
     }
